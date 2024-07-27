@@ -1,0 +1,123 @@
+body {
+    background-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outer-circle {
+    position: relative;
+    top: 40px;
+    height: 240px;
+    width: 240px;
+    background-color:rgb(226, 250, 7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+
+
+}
+
+.inner-circle{
+    height: 220px;
+    width: 220px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(241, 17, 17);
+}
+.buttons{
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    margin: auto;
+    position: relative;
+    top: 50px;
+    height: 650px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+}
+button{
+    font-size: medium;
+    padding: 10px;
+    border-radius: 30px;
+    width: 70px;
+    border: none;
+    color: white;
+}
+.laps{  
+    position: relative;
+    top: 80px;
+    left: 90px;
+    width: 170px;
+    overflow: auto;
+    list-style: none;
+    height: 180px;
+
+}
+.time-stamp{
+    display: inline-block;
+    margin-left: 20px;
+}
+li{
+    border: 1px solid blue ;
+    padding: 5px;
+    border-radius: 30px; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color:blue 
+}
+.laps::-webkit-scrollbar{
+    display: none;
+}
+.lap-clear-button{
+    display: block;
+    position: fixed;
+    z-index: 100;
+    width: 120px;
+    background-color: rgb(75, 89, 238);
+    left: 50%;
+    top: 612px;
+    cursor: pointer;
+    transform: translate(-50%);
+
+}
+
+.play{
+    background-color: rgb(15, 149, 15);
+}
+.pause{
+    background-color: rgb(75, 89, 238);
+}
+.reset{
+    background-color: red;
+}
+.lap{
+    background-color: orange;
+}
+.play:hover{
+    background-color: rgb(67, 187, 67);
+}
+.pause:hover{
+    background-color: rgb(133, 141, 226);
+}
+.reset:hover{
+    background-color: rgb(236, 107, 107);
+}
+.lap:hover{
+    background-color: rgb(233, 197, 129);
+}
+.lap-clear-button:hover{
+    background-color:  rgb(122, 131, 224);
+}
+.hidden{
+    visibility: hidden;
+}
